@@ -1,0 +1,319 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+   font-family: "Times New Roman", Times, mono-serif;
+}
+
+.container{
+  display:flex;
+}
+
+a{
+  text-decoration:none;
+}
+
+body{
+  color: black;
+  margin: 0 auto;
+}
+
+/* logo */
+.logo {
+    padding: 0px 10px 0px 20px;
+    max-height: 35px;
+    transition-duration: 2s;
+}
+
+.center{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#topbar{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left:0;
+  z-index: 2;
+  background-color:rgb(125, 207, 244);
+}
+
+nav{
+  width: 100%;
+}
+nav a{
+  flex:1;
+  text-align: center;
+  letter-spacing:2px;
+  font-size:18px;
+  padding: 15px 17px;
+  max-height:40px;
+  color:white;
+  text-shadow:1px 1px 5px black;
+}
+
+nav h4{
+  display:inline;
+}
+
+#topbarleft{
+  width:390px;
+  max-height:50px;
+}
+
+#topbarleft h2{
+  display:inline;
+  padding: 0px 5px;
+  color:white;
+}
+#topbarlogo{
+  display: flex;
+  align-items:center;
+  justify-content: left;
+  flex:1;
+}
+#topbarlogo h2{
+  display:inline;
+  letter-spacing:3px;
+}
+
+
+/* nav bar */
+
+
+/* banner */
+#banner hr{
+  width:100%;
+  max-width:750px;
+  height:3px;
+  background-color:white;
+}
+
+#banner h1 h2{
+  flex:1;
+  line-height:0px;
+}
+
+#banner h2{
+  color:white;
+}
+
+#title{
+  margin:0px;
+  font-size:100px;
+  letter-spacing:12px;
+  color:white;
+}
+#title:hover{
+  letter-spacing:14px;
+  text-shadow:2px 2px 5px black;
+}
+
+#banner{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(images/satb.jpg);
+  box-shadow:inset 0px 0px 70px 60px rgba(0, 0, 0, 0.3);
+  padding:300px 0px;
+  display:flex;
+  flex-direction:column;
+  text-shadow:1px 1px 5px black;
+  transition: 2s;
+  transition-timing-function: linear, ease-in;
+}
+
+/* content */
+
+
+#content p{
+  font-size: 25px;
+}
+
+#content{
+  padding:10px;
+  box-shadow: inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color:white;
+}
+
+#content hr{
+  width: 3px;
+  min-height: 380px;
+  background-color: black;
+  border-color:black;
+}
+
+#content h2{
+  font-size: 36px;
+  color:black;
+  border-bottom: 1px solid black;
+  border-width:2px;
+}
+
+#content div{
+  padding: 20px;
+}
+
+#content p{
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing:2px;
+  line-height:30px;
+  font-size:18px;
+}
+
+#infocon{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#datacon{
+  margin:10px;
+}
+
+/* data */
+.chartBox{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+}
+
+
+
+/* footer */
+#footer h3{
+  font-size: 20pt;
+  }
+
+#footer{
+  display:flex;
+  text-align:center;
+  flex-direction: column;
+  background-color:rgb(125, 207, 244);
+  color:white;
+  text-shadow:1px 1px 5px black;
+  padding:40px;
+}
+
+#footerlogo{
+  display: flex;
+  align-items:center;
+  justify-content: left;
+  flex:1;
+}
+#footerlogo h2{
+  display:inline;
+  letter-spacing:3px;
+  color:white
+}
+
+#footer div{
+  flex:1;
+}
+
+#footer a{
+  max-width:fit-content;
+}
+
+#resources h4{
+  letter-spacing:2px;
+  display:inline;
+}
+
+#topbarlogo{
+  color:white;
+  text-shadow:1px 1px 5px black;
+}
+
+#follow{
+  display:flex;
+  flex-direction: column;
+}
+#follow a{
+  display:flex;
+  line-height:0px;
+  flex:1;
+  align-items:center;
+  color:white;
+  text-shadow:1px 1px 5px black;
+}
+
+#resources{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#resources h3{
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 3px;
+  border-bottom: 2px solid white;
+  margin: 8px 8px 15px 8px;
+}
+
+#resources h4{
+  text-shadow: 1px 1px 5px black;
+  color:white;
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  margin:8px;
+}
+
+#resources div {
+  flex: 1;
+  padding: 10px 15px;
+}
+
+#resources img{
+  padding:0px 10px 0px 20px;
+  max-height:20px;
+  max-width:20px;
+}
+
+#resources a{
+  display:flex;
+}
+
+#copyright{
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 3px;
+  text-align: right;
+  font-size:18px;
+
+}
+
+#copyright h4{
+  text-align: right;
+}
+
+
+/* info */
+.button{
+  text-decoration:none;
+  background-color:blue;
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  box-shadow:2px 2px 2px black;
+  cursor: pointer;
+}
+.button:hover{
+  background-color:cornflowerblue;
+}
+
+#search{
+  margin:10px;
+}
+
+#flipcard_output{
+  display:flex;
+  flex-wrap:wrap;
+}

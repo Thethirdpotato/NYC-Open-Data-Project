@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="c3-eb4b9be8.css" rel="stylesheet" type="text/css" />
+  <script src="d3-5.8.2.min-c5268e33.js"></script>
+  <script src="c3.min-d2a1f852.js"></script>
+  <script src="script.js"></script>
+  <script src="functions.js"></script>
+</head>
+
+<body onload="init()">
+  <!-- Navigation -->
+  <div class="container" id="topbar">
+    <div id="topbarleft" class="container center">
+      <a href="index.html" id="topbarlogo">
+        <img src="./images/logo.png" class="logo">
+        <h2>NYC SAT Ranker</h2>
+      </a>
+    </div>
+
+    <nav class="container">
+      <a href="index.html">Home</a>
+      <a href="info.html">Info</a>
+      <a href="data.html">Data</a>
+    </nav>
+
+  </div>
+
+  <!-- banner -->
+  <div class="center" id="banner">
+    <a>
+      <h1></h1>
+    </a>
+  </div>
+
+  <div>
+    
+  </div>
+
+  <!-- Content -->
+  <div class="container" id="content">
+    <div id="overview" class="center" style="flex:1;"">
+      <h2>Our Findings</h2>
+      <p id="satINFO">
+        With the data provided by NYC Open Data, our team was able to culminate the information into various charts and graphs as seen below. Additionally, we have also created a leader board which ranks the SAT scores of schools across the city.
+      </p>
+    </div>
+  </div>
+  <div class="container" id="datacon">
+    <div style="flex:1;">
+      <div class="chartBox">
+        <h2 style="text-align:center;">SAT Statistics By Borough </h2>
+        <select id="chartType" style="width:200px;">
+          <option>Select Chart Type</option>
+          <option value="bar">Bar</option>
+          <option value="line">Line </option>
+        </select>
+      </div>
+      <div class="chartBox">
+        <h3>Average SAT Score</h3>
+        <p>Aggregation and comparison of the average score of each borough in New York City.</p>
+        <a class="button" onclick="byBoro()"> Display </a>
+      </div>
+      <div class="chartBox">
+        <h3>SAT Takers By Borough</h3>
+        <p>Aggregation of SAT takers broken up by section of each borough in New York City</p>
+        <a class="button" onclick="takers()"> Display </a>
+      </div>
+    </div>
+    <div class="chartBox">
+      <div id="chartOutput2" class="center"></div>
+    </div>
+  </div>
+
+  
+  <!-- footer -->
+  <div class="container" id="footer">
+    <div id="footertop">
+      <a href="index.html" id="footerlogo">
+        <img src="images/logo.png" class="logo">
+        <h2>NYC SAT Ranker</h2>
+      </a>
+    </div>
+    <div id="resources">
+      <div>
+        <h3>Resources</h3>
+        <a href="https://satsuite.collegeboard.org/sat/practice-preparation/practice-tests/linear">
+          <h4>Practice Tests</h4>
+        </a>
+        <a href="https://www.khanacademy.org/test-prep/digital-sat">
+          <h4>Khan Academy</h4>
+        </a>
+        <a href="https://www.princetonreview.com/college/free-sat-practice-test">
+          <h4>Princeton Review</h4>
+        </a>
+      </div>
+    </div>
+    <div id="copyright">
+      <h4>
+        Copyright 2024 by NYC SAT Ranker. All Rights Reserved.
+      </h4>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+<!-- https://satsuite.collegeboard.org/sat/practice-preparation/practice-tests/linear -->
+<!-- https://www.khanacademy.org/test-prep/digital-sat -->
+<!-- https://www.princetonreview.com/college/free-sat-practice-test -->
